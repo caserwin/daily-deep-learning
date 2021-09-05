@@ -5,9 +5,10 @@
 代码取自这里：https://github.com/yezhiwen/tensorflow_recommend_algorithm/blob/main/model/mmoe.py#L54
 """
 import tensorflow as tf
+from tensorflow.python.keras.layers import Layer
 
 
-class MMoE(tf.keras.layers.Layer):
+class MMoE(Layer):
 
     def __init__(self, units, num_experts, num_tasks,
                  use_expert_bias=True, use_gate_bias=True, expert_activation='relu', gate_activation='softmax',
