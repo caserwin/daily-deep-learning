@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time : 2021/9/5 11:33 上午
-# @Author : Erwin
 import tensorflow as tf
 import numpy as np
 

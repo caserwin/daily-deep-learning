@@ -31,3 +31,14 @@ with tf.Session() as session:
     print(session.run(tf.concat(emb_list, 0)))  # 2*2*2 矩阵
     print(session.run(tf.concat(emb_list, 1)))  # 1*4*2 矩阵
     print(session.run(tf.concat(emb_list, 2)))  # 1*2*4 矩阵
+
+"""
+说明：
+两个tensor :
+a 是 (1, 1, 2)
+b 是 (1, 1, 2)
+
+如果按照 axis = 0 concat 就是(2, 1, 2) 的tensor。
+如果按照 axis = 1 concat 就是(1, 2, 2) 的tensor。
+如果按照 axis = 2 concat 就是(1, 1, 4) 的tensor。
+"""

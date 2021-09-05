@@ -23,7 +23,7 @@ from keras.initializers import VarianceScaling
 from keras.layers import Input, Dense
 from keras.models import Model
 
-from demo_keras.model.mmoe import MMoE
+from keras.model.mmoe import MMoE
 
 SEED = 1
 

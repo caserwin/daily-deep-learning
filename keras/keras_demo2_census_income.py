@@ -26,7 +26,7 @@ from keras.optimizers import Adam
 from keras.utils import to_categorical
 from sklearn.metrics import roc_auc_score
 
-from demo_keras.model.mmoe import MMoE
+from keras.model.mmoe import MMoE
 
 SEED = 1
 
