@@ -1,16 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time : 2021/8/28 1:42 PM
-# @Author : Erwin
-
-
-"""
-Multi-gate Mixture-of-Experts demo with census income data.
-
-Copyright (c) 2018 Drawbridge, Inc
-Licensed under the MIT License (see LICENSE for details)
-Written by Alvin Deng
-"""
 
 import random
 
@@ -26,7 +15,7 @@ from keras.optimizers import Adam
 from keras.utils import to_categorical
 from sklearn.metrics import roc_auc_score
 
-from keras.model.mmoe import MMoE
+from demo_keras.model.mmoe import MMoE
 
 SEED = 1
 
