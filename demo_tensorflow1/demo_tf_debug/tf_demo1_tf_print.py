@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time : 2021/8/28 4:29 PM
-# @Author : Erwin
 from __future__ import print_function
 import tensorflow as tf
 import os

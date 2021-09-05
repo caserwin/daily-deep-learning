@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time : 2021/8/28 1:44 PM
-# @Author : Erwin
-
 """
 Multi-gate Mixture-of-Experts demo with census income data.
 

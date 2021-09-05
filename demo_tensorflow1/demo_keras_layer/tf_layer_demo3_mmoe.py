@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # @Author : Erwin
-# coding=utf-8
 """
 代码取自这里：https://github.com/yezhiwen/tensorflow_recommend_algorithm/blob/main/model/mmoe.py#L54
 """

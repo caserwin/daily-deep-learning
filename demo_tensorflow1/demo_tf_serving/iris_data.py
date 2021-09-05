@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time : 2021/8/28 4:32 PM
-# @Author : Erwin
-
 import pandas as pd
 import tensorflow as tf
 

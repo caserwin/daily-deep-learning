@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # @Author : Erwin
-# coding=utf-8
 import tensorflow as tf
 from tensorflow.python.keras.layers import Layer
 

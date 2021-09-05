@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time : 2021/8/28 4:30 PM
-# @Author : Erwin
-# coding: utf-8
 import tensorflow as tf
 from tensorflow import feature_column
 from tensorflow.contrib import layers
