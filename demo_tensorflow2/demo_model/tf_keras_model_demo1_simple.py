@@ -42,8 +42,3 @@ model1.compile(optimizer=tf.keras.optimizers.Adam(), loss=BinaryCrossentropy())
 y1 = model1.predict(x)
 print(y1)
 
-import math
-
-print("sigmoid", 1 / (1 + math.exp(-12)))
-print("sigmoid", 1 / (1 + math.exp(-30)))
-
