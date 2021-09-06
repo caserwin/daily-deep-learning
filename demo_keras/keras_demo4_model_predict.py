@@ -7,8 +7,6 @@ import numpy as np
 
 print(k.__version__)
 
-
-
 model = load_model('store/my_model', custom_objects={'MMoE': MMoE})
 # Print out model architecture summary
 model.summary()

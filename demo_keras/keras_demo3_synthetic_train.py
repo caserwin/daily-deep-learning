@@ -39,6 +39,7 @@ K.set_session(tf_session)
 参考：https://github.com/drawbridge/keras-mmoe/blob/master/requirements.txt
 '''
 
+
 def data_preparation():
     # Synthetic data parameters
     num_dimension = 100
@@ -154,5 +155,6 @@ def main():
 
 if __name__ == '__main__':
     import keras as k
+
     print(k.__version__)
     main()

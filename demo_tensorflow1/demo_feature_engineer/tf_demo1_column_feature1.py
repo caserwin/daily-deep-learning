@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
-
-
 import tensorflow as tf
-# from tensorflow import feature_column
-from tensorflow.python.feature_column import feature_column
-
+from tensorflow import feature_column
 
 # 1. from tensorflow.contrib import feature_column   # 说明 feature_column 还是直接用 tensorflow.feature_column 靠谱
 # 2. tf.feature_column.embedding_column：支持 bucketized_column、categorical_column_with_xx、crossed_column 特征
 
 # ================================== numeric column ==================================
-def test_numeric():
+def numeric_test():
     # 4行样本
     price = {'price': [[5.], [15.], [25.], [35.]]}
     price_column = feature_column.numeric_column('price', normalizer_fn=lambda x: x + 2)
@@ -19,7 +15,7 @@ def test_numeric():
         print(session.run([price_transformed_tensor]))
 
 
-test_numeric()
+numeric_test()
 print('_' * 80)
 
 
