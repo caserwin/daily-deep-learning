@@ -38,3 +38,12 @@ with tf.compat.v1.Session() as session:
 1. https://stackoverflow.com/questions/35687678/using-a-pre-trained-word-embedding-word2vec-or-glove-in-tensorflow
 2. https://stackoverflow.com/questions/62217537/tensorflow-keras-embedding-layer-applied-to-a-tensor
 """
+# ================================== method 3 ==================================
+print("=" * 40, "method 3", "=" * 40)
+"""
+运行以下代码时，不能开启：tf.compat.v1.disable_eager_execution()
+参考：https://www.tensorflow.org/text/guide/word_embeddings
+"""
+embedding_layer = tf.keras.layers.Embedding(1000, 5)
+result = embedding_layer(tf.constant([1, 2, 3]))
+print(result)

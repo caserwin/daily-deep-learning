@@ -18,7 +18,7 @@ with tf.Session() as sess:
 print("=" * 80)
 # ================================== tf.reshape demo2======================================
 x = tf.constant([[1, 2], [3, 4]])
-y = tf.reshape(x, [-1])
+y = tf.reshape(x, [1, 4])
 with tf.Session() as sess:
     print(sess.run(y))
 

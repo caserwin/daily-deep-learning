@@ -5,10 +5,10 @@ from tensorflow.python.keras import backend as K
 from tensorflow.python.keras.initializers import (Zeros, glorot_normal)
 from tensorflow.python.keras.layers import Layer
 
-
-def add_variable(var_list):
-    for v in var_list:
-        tf.add_to_collection(tf.GraphKeys.MODEL_VARIABLES, v)
+"""
+1. 这里是deepctr 实现版本
+2. TF 2.x 的实现版本：https://github.com/ZiyaoGeng/Recommender-System-with-TF2.0/blob/master/DCN/modules.py
+"""
 
 
 class CrossNet(Layer):
@@ -35,8 +35,6 @@ class CrossNet(Layer):
                                      shape=(dim, 1),
                                      initializer=Zeros(),
                                      trainable=True) for i in range(self.layer_num)]
-
-        add_variable(self.kernels + self.bias)
         if len(self.kernels) > 0:
             tf.contrib.layers.apply_regularization(self.l2, weights_list=self.kernels)
 
@@ -54,12 +52,6 @@ class CrossNet(Layer):
             dot_ = tf.matmul(x_0, xl_w)
             x_l = dot_ + self.bias[i] + x_l
         x_l = tf.squeeze(x_l, axis=2)
-        # todo 这里是debug 调试
-        with tf.Session() as session:
-            session.run(tf.global_variables_initializer())
-            print("x_l :", x_l.eval(session=session))
-            print("self.kernels[i] :", self.kernels[0].eval(session=session))
-
         return x_l
 
     def get_config(self, ):
